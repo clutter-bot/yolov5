@@ -1,0 +1,16 @@
+# Train command: python train.py --data toys.yaml
+# Default dataset location is next to YOLOv5:
+#   /parent
+#     /datasets/coco
+#     /yolov5
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: /storage/datasets/ToyDataset_V1/VOC/VOCdevkit/VOC2021/yolov5-train/  # dataset root dir
+train: train/images # train.txt  # train images (relative to 'path') 
+val: val/images # test.txt  # train images (relative to 'path') 
+test: # test/images # test.txt  # 
+
+# Classes
+nc: 2  # number of classes
+names: [ 'Toy', 'Bin' ]  # class names
